@@ -6,6 +6,7 @@ import Login from "../pages/Login";
 import { useSelector } from "react-redux";
 import Header from "../pages/header";
 import Register from "../pages/register";
+import Summary from "../pages/summary"
 
 const AppRoutes = () => {
   const { isLoggedIn } = useSelector((state) => state.user);
@@ -23,7 +24,7 @@ const AppRoutes = () => {
           element={isLoggedIn ? <Navigate to="/summary" /> : <Register />}
         />
         <Route path="/" element={<ProtectedRoute />}>
-          <Route path="/summary" element={"summary"} />
+          <Route path="/summary" element={<Summary/>} />
           <Route path="/services" element={"services"} />
           <Route path="/home" element={"home"} />
         </Route>
