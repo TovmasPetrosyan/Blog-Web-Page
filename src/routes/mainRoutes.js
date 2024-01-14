@@ -7,6 +7,9 @@ import { useSelector } from "react-redux";
 import Header from "../pages/header";
 import Register from "../pages/register";
 import Summary from "../pages/summary"
+import CreatePosts from "../components/CreatePosts/CreatePosts"
+import Home from "../pages/Home";
+import AuthorsPage from "../pages/AuthorsPage";
 
 const AppRoutes = () => {
   const { isLoggedIn } = useSelector((state) => state.user);
@@ -25,8 +28,9 @@ const AppRoutes = () => {
         />
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="/summary" element={<Summary/>} />
-          <Route path="/services" element={"services"} />
-          <Route path="/home" element={"home"} />
+          <Route path="/create" element={<CreatePosts />}/>
+          <Route path="/authors" element={<AuthorsPage/>}/>
+          <Route path="/home" element={<Home/>}/>
         </Route>
       </Routes>
     </>

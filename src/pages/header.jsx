@@ -63,16 +63,16 @@ const Header = ({}) => {
       <div className="theme-toggle-button" onClick={() => dispatch(toggleTheme())}>
         {mode === "light" ? "Dark Mode" : "Light Mode"}
       </div>
-      <nav>
+      <nav className="nav_menu">
         <ul>
           <li>
             <Link to="/home">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/authors">Authors</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/create">Create Posts</Link>
           </li>
         </ul>
       </nav>

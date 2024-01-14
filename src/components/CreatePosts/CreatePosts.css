@@ -1,0 +1,83 @@
+:root{
+  --color-primary:#302f4c;
+  --color-white:#fff;
+  --color-red: rgb(108, 104, 104);
+  --color-gray-100: hsl(220, 20%, 10%, 5%);
+  --color-gray-200: hsl(220, 20%, 10%, 10%);
+  --color-gray-300: hsl(220, 20%, 10%, 25%);
+  --color-gray-500: hsl(220, 20%, 10%, 50%);
+  --color-gray-700:#252542 ;
+  --color-gray-900: #0c0c22;
+
+  --color-bg:hwb(240 95% 0%);
+
+  --transition:all 300ms ease;
+
+
+  --container-width-lg:84%;
+  --container-width-md:92%;
+  --form-width:50%;
+
+
+  --radius-1: 0.3rem;
+  --radius-2: 0.6rem;
+  --radius-3: 1rem;
+  --radius-4: 2rem;
+
+}
+
+
+input, select, textarea {
+    padding:0.6rem 1rem;
+   
+    border-radius:0.6rem;
+    resize:none
+}
+
+.create-post{
+    width: 50%;
+    margin-inline:auto;
+    height: calc(100vh - 12rem);
+    display:grid;
+    place-items:center;
+  }
+
+  .container{
+  width: 84%;
+  margin-inline: auto;
+}
+
+.btn.primary{
+  background:var(--color-primary) ;
+  color:var(--color-white)
+}
+.btn{
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-2);
+  background:var(--color-white);
+  font-weight: 500;
+  cursor:pointer;
+  transition:var(--transition)
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap:0.8rem
+}
+
+h2{
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+  padding:3rem;
+  margin-inline: auto;
+  display:block;
+  width: 100%;
+}
+
+
